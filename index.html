@@ -821,12 +821,12 @@ Produk ini cocok buat siapa saja, kok! Tua, muda, remaja, dan dewasa bisa pakai 
             var selectedClass = "";
             $("p").click(function(){
             selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio").fadeTo(10, 0.1);
                 $("#portfolio div").not("."+selectedClass).fadeOut();
             setTimeout(function() {
               $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
+              $("#portfolio").fadeTo(10, 1);
+            }, 100);
                 
             });
         });
